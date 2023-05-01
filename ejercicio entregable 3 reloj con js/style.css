@@ -1,0 +1,69 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: azure;
+}
+
+/* contenedor general */
+.contenedor{
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.centro{
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(144, 169, 184);
+    background-color: rgb(16, 16, 16);
+    z-index: 1000000;
+    border-radius: 50px;
+    position: absolute;
+    top: 47%;
+    left: 48%;
+}
+ 
+.segundos,.minutos,.horas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform-origin: top;
+} 
+
+/* estilo de las diferentes agujas */
+.segundos{ 
+    width: 5px;
+    height: 40%;
+    background-color: red;
+}
+
+.minutos{ 
+    width: 10px;
+    height: 30%;
+    background-color: black;
+}
+
+.horas{ 
+    width: 15px;
+    height: 25%;
+    background-color:  black;
+}
+
+img{
+    width: 530px;
+    height: 530px;
+}
